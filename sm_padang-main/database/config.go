@@ -9,7 +9,8 @@ import (
 )
 
 func InitDatabaseConfig() *gorm.DB {
-	dbURL := "postgres://postgres:postgres@localhost:5432/sm_padangreal"
+	// dbURL := "postgres://postgres:postgres@localhost:5432/sm_padangreal"
+    dbURL := "postgresql://postgres:keDmYjoYivszpziPhYiCLndFiWbpYriJ@autorack.proxy.rlwy.net:14267/railway"
 
 	db, err := gorm.Open(postgres.Open(dbURL), &gorm.Config{})
 
